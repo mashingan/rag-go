@@ -8,7 +8,7 @@ require (
 	github.com/ynqa/wego v0.0.0-20230402162916-bce06112d2fe
 )
 
-replace github.com/kirill-scherba/word2vec => D:/College/Go/word2vec
+replace github.com/kirill-scherba/word2vec => ./deps/word2vec
 
 require (
 	github.com/gonum/blas v0.0.0-20181208220705-f22b278b28ac // indirect

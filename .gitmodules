@@ -1,0 +1,4 @@
+[submodule "deps/word2vec"]
+	path = deps/word2vec
+	url = https://github.com/kirill-scherba/word2vec
+	branch = feature/native_libw2
