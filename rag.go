@@ -1,37 +1,5 @@
 package main
 
-/*
-This is using package github.com/kirill-scherba/word2vec
-with branch of feature/native_libw2
-
-so first we need to clone it:
-git clone https://github.com/kirill-scherba/word2vec --branch feature/native_libw2 --depth 1
-
-also this requires Go 1.25.7 hence if our version is lower:
-go version # go1.25.2
-
-we need to install it first:
-go install golang.org/dl/go1.25.7@latest
-go1.25.7 download
-
-set our alias:
-alias go=go1.25.7
-
-or powershell:
-set-alias go=go1.25.7
-
-next build and install the cmd:
-cd word2vec/cmd
-go install
-
-back to up and modify our go.mod:
-cd ../../rag-go
-
-edit it to have:
-replace "github.com/kirill-scherba/word2vec => ../word2vec
-
-*/
-
 import (
 	"fmt"
 	"log"

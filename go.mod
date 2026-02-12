@@ -4,6 +4,7 @@ go 1.25.5
 
 require (
 	github.com/kirill-scherba/word2vec v1.0.7
+	github.com/magefile/mage v1.15.0
 	github.com/rikonor/go-ann v0.0.0-20180822120657-22df548f1e42
 	github.com/ynqa/wego v0.0.0-20230402162916-bce06112d2fe
 )
