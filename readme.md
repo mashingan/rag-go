@@ -63,6 +63,7 @@ git clone https://github.com/mashingan/rag-go
 cd rag-go
 mage init
 mage example_w2v # to see our setup is complete
+mage downloadModel
 ```
 
 [mgweb]: https://magefile.org

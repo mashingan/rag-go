@@ -5,3 +5,5 @@
 
 *.bin
 knowledge.txt
+
+deps/all-MiniLM-L6-v2/*
