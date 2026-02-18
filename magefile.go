@@ -92,10 +92,10 @@ func DownloadModel() error {
 		tokenizerfname: tokenizerUrl,
 	}
 	for fname, _ := range fileurl {
-		if f, err := os.Open(filepath.Join(targetsPath, fname)); err != nil && !os.IsNotExist(err) {
+		_, err := os.Lstat(filepath.Join(targetsPath, fname))
+		if err != nil && os.IsNotExist(err) {
+			fmt.Println("info err:", err)
 			continue
-		} else {
-			f.Close()
 		}
 		delete(fileurl, fname)
 	}
@@ -104,7 +104,7 @@ func DownloadModel() error {
 		return nil
 	}
 	fmt.Println("This will download around 90 MB model...")
-	if err := os.MkdirAll(targetsPath, os.ModeDir|0665); err != nil {
+	if err := os.MkdirAll(targetsPath, os.ModeDir|0755); err != nil {
 		return err
 	}
 	var (
